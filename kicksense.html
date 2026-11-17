@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KickSense | Joanna Wong</title><meta name="description" content="Build a home-use device for infants aged 3 to 9 months with cerebral palsy that detects one therapeutic movement, a knee kick with a stable thigh, and rewards it right away. No wires on the infant, under 5 minutes for a parent to set up, under $150 in parts.">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><div class="wrap"><nav class="nav" aria-label="Main"><a class="brand" href="index.html">Joanna Wong</a><ul><li><a href="index.html#projects">Projects</a></li><li><a href="about.html">About</a></li><li><a href="#contact">Contact</a></li><li class="cv" hidden><a href="resume.pdf">Resume</a></li></ul></nav></div></header>
+<main class="wrap">
+<a class="back" href="index.html#projects">Back to all projects</a>
+<div class="phead"><h1>KickSense</h1><p class="obj">Build a home-use device for infants aged 3 to 9 months with cerebral palsy that detects one therapeutic movement, a knee kick with a stable thigh, and rewards it right away. No wires on the infant, under 5 minutes for a parent to set up, under $150 in parts.</p>
+<dl class="facts"><div><dt>My role</dt><dd>Tech lead. I wrote the firmware, built the electronics and designed the enclosure.</dd></div><div><dt>Context</dt><dd>Design Thinking and Communication, Northwestern. Client: M Street Pediatric Therapy.</dd></div><div><dt>Category</dt><dd>Physical computing</dd></div></dl></div>
+<figure class="ph hero-ph zoom polaroid"><div class="box"><span>Finished play gym</span><small>kicksense-1.jpg</small><img src="images/kicksense-1.jpg" alt="Finished play gym" loading="lazy" onerror="this.remove()"></div><figcaption>Finished play gym</figcaption></figure>
+<div class="two"><figure class="ph zoom polaroid"><div class="box"><span>Circuit inside the enclosure</span><small>kicksense-2.jpg</small><img src="images/kicksense-2.jpg" alt="Circuit inside the enclosure" loading="lazy" onerror="this.remove()"></div><figcaption>Circuit inside the enclosure</figcaption></figure><figure class="ph zoom polaroid"><div class="box"><span>Sensor board in the plush toy</span><small>kicksense-3.jpg</small><img src="images/kicksense-3.jpg" alt="Sensor board in the plush toy" loading="lazy" onerror="this.remove()"></div><figcaption>Sensor board in the plush toy</figcaption></figure></div>
+<div class="cols">
+<div class="panel wide"><h2>Process</h2><ul><li><b>Sensor in a plush toy, not on the baby.</b> An ankle strap gave clean readings, but caregivers were uneasy about wiring near the infant. After the move, no caregiver raised a safety concern.</li><li><b>A moving toy as the reward.</b> In testing, infants barely reacted to sound and consistently watched moving objects, so a servo turns a toy when a kick is detected.</li><li><b>An incline.</b> Flat on the floor, wriggling registered almost as readily as kicking. Propping the infant up separates the two motions, so the firmware calibrates for the incline.</li><li><b>Layered filtering.</b> Each filter removes one kind of false kick: gravity compensation removes the constant 1 g reading, a sustain buffer rejects single-sample spikes, a sign-change check rejects back-and-forth vibration, and adaptive recalibration follows a drifting baseline.</li></ul></div>
+<div class="panel res"><h2>Results</h2><ul><li>Kick detection confidence rose from about 25% to about 60% with the incline.</li><li>Infants responded consistently to the moving toy.</li><li>Delivered a final report in IEEE format and a presentation to the client.</li></ul></div>
+<div class="panel"><h2>Skills and tools</h2><ul class="tags"><li>ESP32</li><li>MPU-6050 accelerometer and gyroscope</li><li>servo</li><li>C++</li><li>CAD</li><li>3D printing</li><li>soldering</li></ul><p style="margin-top:16px"><a href="https://sites.google.com/view/joannawongportfolio/projects/physical-computing/kicksense">Slides and final report</a></p></div>
+</div>
+<nav class="pager" aria-label="More projects"><a href="met.html"><span>Previous</span>Met residential and art tower</a><a href="radar.html" style="text-align:right"><span>Next</span>Radar detection</a></nav>
+<dialog id="light" class="light" aria-label="Photo"><button class="x" aria-label="Close">×</button><img alt=""><p></p></dialog>
+</main>
+<footer id="contact"><div class="wrap"><div><h2>Get in touch</h2><p>Looking for a summer 2027 internship in power, energy or embedded systems.</p></div>
+<div class="actions"><a class="btn primary" href="mailto:3joannawong@gmail.com">3joannawong@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/joanna--wong">LinkedIn</a></div></div></footer>
+<script src="site.js"></script>
+</body></html>
