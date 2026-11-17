@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar detection | Joanna Wong</title><meta name="description" content="Sweep an ultrasonic range sensor through 180° on a servo and report the angle and distance of any object within 50 cm.">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><div class="wrap"><nav class="nav" aria-label="Main"><a class="brand" href="index.html">Joanna Wong</a><ul><li><a href="index.html#projects">Projects</a></li><li><a href="about.html">About</a></li><li><a href="#contact">Contact</a></li><li class="cv" hidden><a href="resume.pdf">Resume</a></li></ul></nav></div></header>
+<main class="wrap">
+<a class="back" href="index.html#projects">Back to all projects</a>
+<div class="phead"><h1>Radar detection</h1><p class="obj">Sweep an ultrasonic range sensor through 180° on a servo and report the angle and distance of any object within 50 cm.</p>
+<dl class="facts"><div><dt>My role</dt><dd>I designed the mount that holds the sensor on the servo on my own, and built the circuit and wrote the code with my group.</dd></div><div><dt>Context</dt><dd>Group project.</dd></div><div><dt>Category</dt><dd>Physical computing</dd></div></dl></div>
+<figure class="ph hero-ph zoom polaroid"><div class="box"><span>Final assembly</span><small>radar-1.jpg</small><img src="images/radar-1.jpg" alt="Final assembly" loading="lazy" onerror="this.remove()"></div><figcaption>Final assembly</figcaption></figure>
+<div class="two"><figure class="ph zoom polaroid"><div class="box"><span>Mount prototypes, first to final</span><small>radar-2.jpg</small><img src="images/radar-2.jpg" alt="Mount prototypes, first to final" loading="lazy" onerror="this.remove()"></div><figcaption>Mount prototypes, first to final</figcaption></figure><figure class="ph zoom polaroid"><div class="box"><span>Circuit and wiring</span><small>radar-3.jpg</small><img src="images/radar-3.jpg" alt="Circuit and wiring" loading="lazy" onerror="this.remove()"></div><figcaption>Circuit and wiring</figcaption></figure></div>
+<div class="cols">
+<div class="panel wide"><h2>Process</h2><ul><li><b>First prototype.</b> The mount attached only to the servo horn and was unstable.</li><li><b>Second and third.</b> Legs on the base fixed the wobble but blocked the servo's rotation.</li><li><b>Final.</b> The support stays clear of the sweep.</li><li><b>Measuring distance.</b> The sensor sends a pulse of sound and times the echo. Sound travels about 0.034 cm per microsecond and the pulse goes out and back, so distance = echo time × 0.034 ÷ 2.</li></ul></div>
+<div class="panel res"><h2>Results</h2><ul><li>A stable mount that sweeps the full 180° without obstruction.</li><li>Each reading pairs a servo angle with a distance, which gives the object's position.</li></ul></div>
+<div class="panel"><h2>Skills and tools</h2><ul class="tags"><li>Ultrasonic range sensor</li><li>servo motor</li><li>3D modeling</li></ul><p style="margin-top:16px"><a href="https://sites.google.com/view/joannawongportfolio/projects/physical-computing/radar-detection">Code and slides</a></p></div>
+</div>
+<nav class="pager" aria-label="More projects"><a href="kicksense.html"><span>Previous</span>KickSense</a><a href="waste.html" style="text-align:right"><span>Next</span>Waste management system</a></nav>
+<dialog id="light" class="light" aria-label="Photo"><button class="x" aria-label="Close">×</button><img alt=""><p></p></dialog>
+</main>
+<footer id="contact"><div class="wrap"><div><h2>Get in touch</h2><p>Looking for a summer 2027 internship in power, energy or embedded systems.</p></div>
+<div class="actions"><a class="btn primary" href="mailto:3joannawong@gmail.com">3joannawong@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/joanna--wong">LinkedIn</a></div></div></footer>
+<script src="site.js"></script>
+</body></html>

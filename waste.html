@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waste management system | Joanna Wong</title><meta name="description" content="Detect when a public trash can is full, to help with overflowing bins and litter in dense cities.">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><div class="wrap"><nav class="nav" aria-label="Main"><a class="brand" href="index.html">Joanna Wong</a><ul><li><a href="index.html#projects">Projects</a></li><li><a href="about.html">About</a></li><li><a href="#contact">Contact</a></li><li class="cv" hidden><a href="resume.pdf">Resume</a></li></ul></nav></div></header>
+<main class="wrap">
+<a class="back" href="index.html#projects">Back to all projects</a>
+<div class="phead"><h1>Waste management system</h1><p class="obj">Detect when a public trash can is full, to help with overflowing bins and litter in dense cities.</p>
+<dl class="facts"><div><dt>My role</dt><dd>Team project.</dd></div><div><dt>Context</dt><dd>Team project.</dd></div><div><dt>Category</dt><dd>Physical computing</dd></div></dl></div>
+<figure class="ph hero-ph zoom polaroid"><div class="box"><span>Prototype mounted on the can</span><small>waste-1.jpg</small><img src="images/waste-1.jpg" alt="Prototype mounted on the can" loading="lazy" onerror="this.remove()"></div><figcaption>Prototype mounted on the can</figcaption></figure>
+<div class="two"><figure class="ph zoom polaroid"><div class="box"><span>Top and sensor enclosure parts</span><small>waste-2.jpg</small><img src="images/waste-2.jpg" alt="Top and sensor enclosure parts" loading="lazy" onerror="this.remove()"></div><figcaption>Top and sensor enclosure parts</figcaption></figure><figure class="ph zoom polaroid"><div class="box"><span>Trial results</span><small>waste-3.jpg</small><img src="images/waste-3.jpg" alt="Trial results" loading="lazy" onerror="this.remove()"></div><figcaption>Trial results</figcaption></figure></div>
+<div class="cols">
+<div class="panel wide"><h2>Process</h2><ul><li><b>Measure from the lid.</b> A distance sensor inside the lid looks down at the trash. As the can fills, the distance shrinks, so one sensor and one threshold answer the question without weighing anything.</li><li><b>Clear output.</b> Below the threshold the LED turns on and the serial output reads "Trash Full." Otherwise it reads "Trash OK."</li><li><b>Two-part enclosure.</b> One part on the lid holds the Arduino, breadboard and LED. The other fixes the sensor inside the lid.</li><li><b>Simulate first.</b> We drafted and tested the circuit and code in TinkerCAD before the physical build.</li></ul></div>
+<div class="panel res"><h2>Results</h2><ul><li>Tested in three trials at rising fill levels, against a requirement of a response within 2 to 3 seconds.</li></ul></div>
+<div class="panel"><h2>Skills and tools</h2><ul class="tags"><li>Arduino Uno</li><li>distance sensor</li><li>LED</li><li>TinkerCAD</li></ul><p style="margin-top:16px"><a href="https://sites.google.com/view/joannawongportfolio/projects/physical-computing/waste-managment-system">Trial results</a></p></div>
+</div>
+<nav class="pager" aria-label="More projects"><a href="radar.html"><span>Previous</span>Radar detection</a><a href="schack.html" style="text-align:right"><span>Next</span>NYU Schack Institute new center</a></nav>
+<dialog id="light" class="light" aria-label="Photo"><button class="x" aria-label="Close">×</button><img alt=""><p></p></dialog>
+</main>
+<footer id="contact"><div class="wrap"><div><h2>Get in touch</h2><p>Looking for a summer 2027 internship in power, energy or embedded systems.</p></div>
+<div class="actions"><a class="btn primary" href="mailto:3joannawong@gmail.com">3joannawong@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/joanna--wong">LinkedIn</a></div></div></footer>
+<script src="site.js"></script>
+</body></html>
